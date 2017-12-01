@@ -1,0 +1,9 @@
+﻿@model Region
+
+@using (var form = Html.BeginForm())
+{
+    @Html.LabelFor(d=> d.RegionDescription)
+    @Html.TextBoxFor(d=> d.RegionDescription)
+
+    <button type="submit"> Crear</button>
+}

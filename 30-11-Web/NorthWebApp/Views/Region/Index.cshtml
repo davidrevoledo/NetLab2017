@@ -1,0 +1,14 @@
+﻿@model List<Region>
+
+
+<h2>Regiones</h2>
+
+<table>
+    @foreach(var region in Model)
+    {
+        <tr>
+            <td>@region.RegionID</td>
+            <td>@region.RegionDescription</td>
+        </tr>
+    }
+</table>

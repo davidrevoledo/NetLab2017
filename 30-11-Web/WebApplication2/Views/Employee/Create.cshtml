@@ -1,0 +1,9 @@
+﻿@model WebApplication2.Models.Employee
+
+@using (var form = Html.BeginForm())
+{
+    @Html.LabelFor(c => c.Name)
+    @Html.TextBoxFor(c => c.Name)
+    @*<input type="text" placeholder="Ingrese su nombre" name="Name" />*@
+    <button type="submit">Guardar</button>
+}

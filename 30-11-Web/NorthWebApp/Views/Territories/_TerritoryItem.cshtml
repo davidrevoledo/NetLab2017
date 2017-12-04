@@ -1,0 +1,15 @@
+﻿@model NorthWebApp.Domain.Territory
+
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => Model.Region.RegionDescription)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => Model.TerritoryDescription)
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.TerritoryID }) |
+        @Html.ActionLink("Details", "Details", new { id = Model.TerritoryID }) |
+        @Html.ActionLink("Delete", "Delete", new { id = Model.TerritoryID })
+    </td>
+</tr>

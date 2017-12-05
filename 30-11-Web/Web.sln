@@ -13,6 +13,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Views", "Views", "{80623A29
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcState", "MvcState\MvcState.csproj", "{B3C57F0D-D870-4821-9834-6513753169C7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "State", "State", "{43D9D02B-433A-42E0-87FE-F267D37F61A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Filters", "Filters", "{B329B7A9-1B1B-48B6-8858-A2A23E4A151F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcFilters", "MvcFilters\MvcFilters.csproj", "{AD02F6E8-6768-4317-8C7B-FC6448CF3F23}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +37,10 @@ Global
 		{B3C57F0D-D870-4821-9834-6513753169C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3C57F0D-D870-4821-9834-6513753169C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3C57F0D-D870-4821-9834-6513753169C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD02F6E8-6768-4317-8C7B-FC6448CF3F23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD02F6E8-6768-4317-8C7B-FC6448CF3F23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD02F6E8-6768-4317-8C7B-FC6448CF3F23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD02F6E8-6768-4317-8C7B-FC6448CF3F23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +48,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D75F7959-A3CA-433E-9C80-934E5789E704} = {0A374282-3F8D-4280-8D1D-401590E13D65}
 		{E9C7DE02-F109-4F09-A845-AA592C1950DB} = {80623A29-21C4-490A-B7AD-EDD3D040C166}
+		{B3C57F0D-D870-4821-9834-6513753169C7} = {43D9D02B-433A-42E0-87FE-F267D37F61A5}
+		{AD02F6E8-6768-4317-8C7B-FC6448CF3F23} = {B329B7A9-1B1B-48B6-8858-A2A23E4A151F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F5AAA370-E73A-4200-BF7E-05A341D0E2B1}

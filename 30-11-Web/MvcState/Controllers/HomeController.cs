@@ -9,13 +9,19 @@ namespace MvcState.Controllers
 {
     public class HomeController : Controller
     {
+        public bool sLoged = false;
+
         public ActionResult Index()
         {
-            //var example = Request.Cookies["example"].Value;
-            //var label = Session["session-test"].ToString();
-            //var cookie = (HttpCookie) Session["COOKIE"];
+            var example = Request.Cookies["example"].Value;
+            var label = Session["session-test"].ToString();
+            var cookie = (HttpCookie)Session["COOKIE"];
 
+            // application level
             HttpContext.Application.Add("page-count", 1);
+
+            // request level
+            HttpContext.Items.Add("page-count", 1);
 
             return View();
         }

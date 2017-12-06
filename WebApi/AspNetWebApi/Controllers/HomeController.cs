@@ -3,23 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using MvcFilters.Filters;
 
-namespace MvcFilters.Controllers
+namespace AspNetWebApi.Controllers
 {
-    [AuthFilter]
     public class HomeController : Controller
     {
-        [ActionFilter2]
         public ActionResult Index()
         {
-            var a = 1; // DB call
+            ViewBag.Title = "Home Page";
 
-            return View();
-        }
-
-        public ActionResult Login()
-        {
             return View();
         }
     }

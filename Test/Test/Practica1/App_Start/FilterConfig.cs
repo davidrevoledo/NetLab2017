@@ -1,5 +1,6 @@
 ﻿using System.Web;
 using System.Web.Mvc;
+using Practica1.Filters;
 
 namespace Practica1
 {
@@ -8,6 +9,7 @@ namespace Practica1
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             filters.Add(new HandleErrorAttribute());
+            //filters.Add(new ContadorAttribute());
         }
     }
 }

@@ -31,7 +31,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>Cantidad de visitas : @ViewBag.Count</p>
+            <p>Cantidad de visitas : @HttpContext.Current.Application["count"]</p>
         </footer>
     </div>
 

@@ -1,0 +1,19 @@
+﻿<h1>Login</h1>
+@model string
+
+<form method="post" action="LoginResult">
+    <div>
+        <label>Nombre: </label>
+        <input type="text" required name="nombre" />
+    </div>
+    <button type="submit">Login</button>
+</form>
+
+@*@using (var form = Html.BeginForm("LoginResult"))
+{
+    <div>
+        <label>Nombre: </label>
+        @Html.TextAreaFor(c => c, new { name = "nombre"})
+    </div>
+    <button type="submit">Login</button>
+}*@

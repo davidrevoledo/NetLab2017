@@ -21,14 +21,23 @@ namespace Practica1.Controllers
     /* 3) - El nombre que se ingreso mostrarlo en el header a la derecha en todas las pantallas
      *    - Si el usuario no ingreso el nombre, no permitirle el ingreso a ninguna otra pantalla
      *      Si trata de ir a otra pantalla se redirigir a la pantalla de ingreso de nombre.
-     * 
      */
 
     /*
-     * 4) Mostrar un contador en el footer de cantidad de visitantes (diferenciados por session)
+     * 4) Mostrar un contador en el footer de cantidad de
+     *    visitantes (diferenciados por session)
      *    Agregar el menu logout para permitir volver a ingresar el nombre de usuario
      *    El color del boton del login debe ser del color del menu
      */
+
+    /*
+        5) 
+        Mostrar una pantalla con un listado de todas las personas
+        que ingresaron al sitio. (no repetidas)
+        Agregar al menu.
+        (Puede ser en memoria)
+        */
+
     [Contador]
     public class HomeController : Controller
     {

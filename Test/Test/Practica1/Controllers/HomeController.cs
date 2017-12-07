@@ -38,6 +38,12 @@ namespace Practica1.Controllers
         (Puede ser en memoria)
         */
 
+
+    /*
+        6)
+        Ahora el sistema solo va a permitir el ingreso a la pantalla anterior si el usuario logeado es 'Admin'
+    */
+
     [Contador]
     public class HomeController : Controller
     {

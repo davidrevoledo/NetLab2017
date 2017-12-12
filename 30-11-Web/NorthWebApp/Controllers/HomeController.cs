@@ -8,9 +8,11 @@ namespace NorthWebApp.Controllers
 {
     public class HomeController : Controller
     {
+        [HttpPost]
         public ActionResult Index()
         {
-            return View();
+            //return View("About");
+            return RedirectToAction("Index", "Region");
         }
 
         public ActionResult About()

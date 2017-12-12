@@ -23,7 +23,7 @@
 
     @foreach (var item in Model)
     {
-        <tr>
+        @*<tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Region.RegionDescription)
             </td>
@@ -35,7 +35,7 @@
                 @Html.ActionLink("Details", "Details", new { id = item.TerritoryID }) |
                 @Html.ActionLink("Delete", "Delete", new { id = item.TerritoryID })
             </td>
-        </tr>
+        </tr>*@
         @Html.Partial("_TerritoryItem", item)
     }
 </table>

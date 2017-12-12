@@ -38,10 +38,11 @@ namespace Practica1.Controllers
         (Puede ser en memoria)
         */
 
-
     /*
         6)
-        Ahora el sistema solo va a permitir el ingreso a la pantalla anterior si el usuario logeado es 'Admin'
+        Ahora el sistema solo va a permitir el
+        ingreso a la pantalla anterior si el usuario logeado es 'Admin'
+        No Mostrar el punto del menu en caso de que no sea Admin
     */
 
     [Contador]

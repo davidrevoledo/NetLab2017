@@ -1,0 +1,36 @@
+﻿<br />
+<br />
+
+<form method="post" id="form">
+    <div class="form-group">
+        <label>Nombre</label>
+        <input id="txtName" type="text" name="Name" />
+        <span id="name-error"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Apellido</label>
+        <input type="text" name="Surname" />
+    </div>
+
+    <div class="form-group">
+        <label>Edad</label>
+        <input type="number" name="Age" />
+    </div>
+
+    <button class="btn btn-success" id="btnSubmit" type="submit">Guardar</button>
+</form>
+
+<script>
+
+    var txtName = document.getElementById("txtName");
+
+
+    function ValidateForm() {
+        return false;
+    }
+
+    document.getElementById("btnSubmit").onclick = function () {
+        return ValidateForm();
+    };
+</script>

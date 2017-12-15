@@ -1,0 +1,48 @@
+﻿<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/foo.js"></script>
+
+<br />
+<br />
+<script>
+    function Eliminar(btn) {
+        var liElement = $(btn).parent();
+    }
+
+    function Editar(btn) {
+        var liElement = $(btn).parent();
+
+       var span = liElement.find("span");
+       span.html()
+    }
+
+    $(document).ready(function () {
+
+        $("#btn").click(function () {
+
+            // leemos el valor
+            var val = $("#valor").val();
+
+            // construimos el nuevo objeto html
+            var elemento = `<li class="list-group-item">
+                                    <span>${val}</span>
+                                    <button onclick="Editar(this") class='btn btn-xs btn-danger'>editar</button>
+                                    <button class='btn btn-xs btn-danger'>x</button>
+                            </li>`;
+
+            var button = "<button onclick='Eliminar(this)'></button>";
+
+            // agregar el objeto a la lista existente
+            $("#lista").append(elemento);
+
+            // limpiamos el valor del input
+            $("#valor").val('');
+        });
+    });
+</script>
+
+<input class="form-control" type="text" id="valor" />
+<button id="btn"> Guardar</button>
+<hr />
+<ul id="lista" class="list-group"></ul>
+
+
